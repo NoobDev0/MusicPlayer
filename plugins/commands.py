@@ -65,15 +65,15 @@ You can also use /dplay <song name> to play a song from Deezer.</b>
 
 
 
-@Client.on_message(filters.command(['vcplayerstart', f'start@{U}']))
+@Client.on_message(filters.command(['vcplayerstart', f'vcplayerstart@{U}']))
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/CinemaHaunter),
+        InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/CinemaHaunter'),
         InlineKeyboardButton('🤖 Other Bots', url='https://t.me/subin_works/122'),
     ],
     [
-        InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/JonasKhanwaldTG),
+        InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/JonasKhanwaldTG'),
         InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
     ],
     [
@@ -88,15 +88,15 @@ async def start(client, message):
 
 
 
-@Client.on_message(filters.command(["vcplayerhelp", f"help@{U}"]))
+@Client.on_message(filters.command(["vcplayerhelp", f"vcplayerhelp@{U}"]))
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/CinemaHaunter),
+            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/CinemaHaunter'),
             InlineKeyboardButton('🤖 Other Bots', url='https://t.me/JonasKhanwaldTG'),
         ],
         [
-            InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/JonasKhanwaldTG),
+            InlineKeyboardButton('👨🏼‍💻 Developer', url='https://t.me/JonasKhanwaldTG'),
             InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/MusicPlayer'),
         ]
     ]
